@@ -1,0 +1,39 @@
+
+  /* #4d0f00; #efb762; #8f0401; #b20403*/
+.frame{
+  width: 500px;
+  border: 50px solid black;
+  margin: 20px auto;
+  padding: 50px;
+}
+.canvas{
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  overflow: hidden;
+  filter: blur(2px);
+}
+.box1{
+  width: 425px;
+  background-color: #efb762;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 9px;
+  box-shadow: 0 0 5px 5px #efb762;
+}
+.box2{
+  width: 475px;
+  height: 200px;
+  background-color: #8f0401;
+  margin: 0 auto;
+  box-shadow: 0 0 5px 5px #8f0401;
+  border-radius: 10px 15px 20px 25px;
+}
+.box3{
+  width: 450px;
+  height: 30%;
+  background-color: #b20403;
+  margin: 15px auto;
+  border-radius:  50px 30px 70px 30px;
+  box-shadow: 0 0 3px 3px #b20403;
+}

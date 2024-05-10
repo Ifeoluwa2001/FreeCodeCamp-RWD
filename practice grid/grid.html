@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .container{
+      display: grid;
+      grid-template-columns: 200px 200px ;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-areas: 
+      "header header "
+      "main aside"
+      "footer footer";
+      justify-content: center;
+      
+    }
+    .item-a
+    {
+      grid-area: header;
+      background-color: brown;
+    }
+    .item-b
+    {
+      grid-area: main;
+      background-color: rgb(50, 205, 63);
+      grid-column: 1 / 3;
+    }
+    .item-c
+    {
+      grid-area: aside;
+      background-color: chocolate;
+    }
+    .item-d
+    {
+      grid-area: footer;
+      background-color: gray;
+    } */
+    .container{
+      display: grid;
+      grid-template-columns: 200px 200px;
+      background-color: aqua;
+    }
+    .item-a{
+      grid-column: span 2;
+      text-align: center;
+      background-color: brown;
+    }
+    .item-b{
+      background-color: blue;
+    }
+    .item-c{
+      grid-column: 2 /3;
+      grid-row: 2 / 4;
+      background-color: yellow;
+
+    }
+    .item-d{
+      background-color: azure;
+      grid-column: 1/ 3
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item-a">Ifeoluwa</div>
+    <div class="item-b">Ifeoluwa</div>
+    <div class="item-c">Ifeoluwa</div>
+    <div class="item-d">Ifeoluwa</div>
+  </div>
+</body>
+</html>

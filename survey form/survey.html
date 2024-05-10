@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajiboye's survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Ajiboye's Survey Form</h1>
+    <p id="description">Thanks for taking your time to answer the survey</p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <!--Demographic-->
+      <label for="name-label">Name <input id="name-label" type="name" placeholder="Enter your name" required></label>
+      <label for="email-label">Email <input id="email-label" type="email" placeholder="Enter your email" required></label>
+      <label for="number-label">Age(optional) <input id="number-label" type="number" placeholder="Enter your age"></label>
+      <!--Question one-->
+      <label for="dropdown">How would you describe our family dynamics?
+        <select id="dropdown">
+          <option value="Select your answer">Select your answer</option>
+          <option value="Very close-knit">Very close-knit</option>
+          <option value="Somewhat close">Somewhat close</option>
+          <option value="Neutral">Neutral</option>
+          <option value="">Somewhat distant</option>
+          <option value="">Very distant</option>
+        </select>
+      </label>
+      <!--Question two-->
+      <p> How can we improve our family time together?</p>
+        <label for="time-1"><input id="time-1" type="radio" name="family-time"> Schedule more regular family activities</label>
+        <label for="time-2"><input id="time-2" type="radio" name="family-time"> Increase open communication</label>
+        <label for="time-3"><input id="time-3" type="radio" name="family-time"> Plan family vacations</label>
+        <label for="time-4"><input id="time-4" type="radio" name="family-time"> Other (please specify)</label>
+      
+      <!--Question three-->
+      <label for="feel"> How do you feel about the frequency of family gatherings or reunions?
+        <select id="feel">
+          <option value="Too frequent">Too frequent</option>
+          <option value="Just right">Just right</option>
+          <option value="Not frequent enough">Not frequent enough</option>
+          <option value="I prefer not to have family gatherings">I prefer not to have family gatherings</option>
+        </select>
+      </label>
+      <!--Question four-->
+      <p>In terms of decision-making within the family, how involved do you feel you are? </p>
+        <label for="decision-1"><input id="decision-1" type="checkbox" name="decision-making" value="Very involved" > Very involved</label>
+        <label for="decision-2"><input id="decision-2" type="checkbox" name="decision-making" value="Somewhat involved"> Somewhat involved</label>
+        <label for="decision-3"><input id="decision-3" type="checkbox" name="decision-making" value="Neutral"> Neutral</label>
+        <label for="decision-4"><input id="decision-4" type="checkbox" name="decision-making" value="Somewhat uninvolved"> Somewhat uninvolved</label>
+        <label for="decision-5"><input id="decision-5" type="checkbox" name="decision-making" value="Very uninvolved"> Very uninvolved</label>  
+      
+      <!--Question five-->
+      <label for="comment"> Any comments or suggestion
+        <textarea id="comment" row="10" cols="30" placeholder="Enter your comment here..."></textarea>
+      </label>
+      <!--Submit button-->
+      <input type="submit" value="submit" id="submit">
+    </form>
+  </main>
+</body>
+</html>

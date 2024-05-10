@@ -1,0 +1,119 @@
+.wheel{
+ position: relative;
+ width: 400px;
+ height: 400px;
+ border: 2px solid black;
+ border-radius: 50%;
+ top: 100px;
+ left: 20%;
+ animation-name: wheel;
+ animation-duration: 10s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+.line{
+  position: absolute;
+  width: 200px;
+  border: 1px solid black;
+
+  animation: line 10s linear infinite;
+}
+.line:nth-of-type(1)
+{
+  transform: rotate(90deg);
+  top: 100px;
+  left: 100px;
+}
+.line:nth-of-type(2){
+  transform: rotate(90deg);
+  bottom: 100px;
+  left: 100px;
+}
+.line:nth-of-type(3)
+{
+  transform: rotate(37deg);
+  top: 140px; 
+  left: 19px; 
+}
+.line:nth-of-type(4)
+{
+  transform: rotate(140deg);
+  bottom: 134px;
+  left: 25px;
+}
+.line:nth-of-type(5)
+{
+  transform: rotate(-40deg);
+  right: 20px;
+  top: 135px;
+}
+.line:nth-child(6){
+  transform: rotate(39.5deg);
+  bottom: 135px;
+  right: 22px;
+}
+.box{
+  position: absolute;
+  width: 80px;
+  height: 75px;
+  border-radius: 20%;
+  background-color: brown;
+  animation: box 10s ease-in-out infinite;
+}
+.box:nth-of-type(1)
+{
+  top: 50px;
+  right: -5px;
+}
+.box.box:nth-of-type(2){
+ top: -32px;
+ left: 160px;
+}
+.box:nth-of-type(3)
+{
+  top: 50px;
+  left: -10px;
+}
+.box.box:nth-of-type(4)
+{
+  bottom: -32px;
+  left: 160px;
+}
+.box.box:nth-of-type(5)
+{
+  bottom: 49px;
+  right: -5px;
+}
+.box:nth-of-type(6){
+  bottom: 49px;
+}
+@keyframes wheel{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    background-color: black;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes box{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    background-color: rgb(138, 134, 134);
+  }
+  50%{
+    background-color: firebrick;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes line{
+  25%{
+    border-color: white;
+  }
+}

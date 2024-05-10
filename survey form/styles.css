@@ -1,0 +1,70 @@
+body{
+  background: linear-gradient(90deg, rgb(61, 56, 56) 40%,rgb(6, 66, 6) 100%);
+  margin: 0;
+  color: white;
+}
+header{
+  text-align: center;
+}
+#title{
+  font-size: 2em;
+}
+#description{
+  font-size: 1.5rem;
+}
+p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+#survey-form{
+  width: 60vw;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 2em auto;
+  background-color: rgba(15, 14, 14, 0.4);
+  padding: 2em;
+}
+label{
+  display: block;
+  font-size: 1.2rem;
+  margin: 15px 0 0 0;
+}
+input,
+select,
+textarea{
+  display: block;
+  width: 100%;
+  min-height: 1.7rem;
+  margin-top: 5px;
+  background-color: rgb(39, 43, 43);
+  border: 2px solid green;
+  color: white;
+}
+select{
+  padding: 7px 0;
+  width: 50%
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+  display: inline;
+  width: unset;
+  vertical-align: middle;
+  margin: 5px 2px; 
+}
+textarea{
+  height: 100px;
+}
+#submit
+{
+  display: block;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+}
+input[type="submit"]:hover
+{
+  background-color: white;
+  color: green;
+}

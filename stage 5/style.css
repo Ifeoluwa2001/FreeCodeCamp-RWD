@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f5f6f7;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header{
+  width: 100%;
+  background-color: #0a0a23;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #fdb347;
+  text-transform: uppercase;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1400px;
+  justify-content: center;
+  padding: 20px 10px;
+}
+.gallery img{
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 10px;
+}
+.gallery::after{
+  content: "";
+  width: 350px;
+}

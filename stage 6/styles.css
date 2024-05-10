@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, sans-serif;
+}
+html{
+  font-size: 16px;
+}
+.label{
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 5px 12px;
+  border: 1px solid black;
+}
+header h1{
+  text-align: center;
+  margin-bottom: 5px;;
+}
+p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px 0;
+}
+.divider{
+  border: 1px solid;
+}
+.large{
+  height: 10px;
+  background-color: black;
+}
+.medium{
+  height: 6px;
+  background-color: black;
+}
+.right{
+  justify-content: flex-end;
+}
+.bold{
+  font-weight: 800;
+}
+.inline{
+  margin-left: 15px;
+}
+.double-inline{
+  margin-left: 30px;
+}
+header p{
+  margin: 2px 0;
+}
+.calories{
+  font-size: 1.7rem;
+  margin: -4px 0;
+}
+.daily-value p:not(.no-divider){
+  border-top: 1px solid;
+}
+.small-text{
+  font-size: 0.8rem;
+}
